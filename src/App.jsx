@@ -24,9 +24,9 @@ function App() {
     <Router>           
             <Navbar />
             <Routes>
-                <Route path='/' element={<ItemListContainer greeting='saludo desde app, bienvenidos' /> } /> 
-                <Route path='/category/:cid' element={<ItemListContainer greeting='saludo desde app, bienvenidos' /> } /> 
-                <Route path='/detail/:pid' element={<ItemDetaliContainer /> } />
+                <Route path='/' element={<itemListContainer greeting='saludo desde app, bienvenidos' /> } /> 
+                <Route path='/category/:cid' element={<itemListContainer greeting='saludo desde app, bienvenidos' /> } /> 
+                <Route path='/detail/:pid' element={<itemDetaliContainer /> } />
                
 
                 <Route path='*' element={<Navigate to='/' />} />                  
